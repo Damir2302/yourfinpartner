@@ -6,19 +6,43 @@
     <meta name="theme-color" content="#000">
     <meta name="format-detection" content="telephone=no">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="ООО «Ваш Финансовый Партнер»">
+    <meta property="og:url" content="/">
+    <meta property="og:title" content=" Ваш Финансовый Партнер – финансирование физических и юридических лиц">
+    <meta property="og:image" content="images/logo.svg">
     <title>Вопросы и ответы о займах и лизинге</title>
+    <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="css/app.min.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;amp;apikey=&lt;ваш API-ключ&gt;" type="text/javascript"></script>
+    <script type="application/ld+json">
+      {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Российская Федерация, г. Москва",
+          "postalCode": "109428",
+          "streetAddress": "проспект Рязанский, дом 10, стр. 18, эт. 10, ком. 6"
+      },
+      "email": "info@yourfinpartner.ru",
+      "name": "ООО «Ваш Финансовый Партнер»",
+      "telephone": "+7 (495) 455-13-40"
+      }
+      
+      
+    </script>
   </head>
   <body class="is-page-default">
     <div class="app">
       <!-- Header :: Start-->
       <div class="header">
         <div class="container-fluid">
-          <div class="header__logo"><a href="#"><img src="images/logo.svg" alt=""></a></div>
+          <div class="header__logo" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject"><a href="#"><img src="images/logo.svg" alt="" itemprop="url"></a></div>
           <div class="header__topbar">
             <ul class="header__topbar-contacts">
-              <li><a class="header__topbar-link" href="tel:+74954458333">+7 495 445-83-33</a></li>
-              <li><a class="header__topbar-link" href="#">
+              <li><a class="header__topbar-link header__topbar-link" href="tel:+74954458333">+7 495 445-83-33</a></li>
+              <li><a class="header__topbar-link" href="https://api.whatsapp.com/send?phone=79013348670" target="_blank" rel="noopener noreferrer">
                   <svg class="icon-whatsapp">
                     <use xlink:href="sprites/sprite.svg#icon-whatsapp"></use>
                   </svg></a></li>
@@ -27,44 +51,44 @@
             <p class="header__topbar-worktime">Ежедневно с 9 до 21 часа</p>
           </div>
           <p class="header__worktime">Ежедневно с 9 до 21 часа</p>
-          <nav class="header__nav">
+          <nav class="header__nav" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
             <ul class="header__nav-menu">
-              <li><a class="header__nav-link" href="#">Лизинг</a></li>
-              <li><a class="header__nav-link" href="#" data-nav="02">Займ
+              <li><a class="header__nav-link" href="#" itemprop="url">Лизинг</a></li>
+              <li><a class="header__nav-link" href="#" itemprop="url" data-nav="02">Займ
                   <svg class="icon-arrow-down">
                     <use xlink:href="sprites/sprite.svg#icon-arrow-down"></use>
                   </svg></a></li>
-              <li><a class="header__nav-link" href="#">Компания</a></li>
-              <li><a class="header__nav-link" href="#">Услуги</a></li>
-              <li><a class="header__nav-link" href="#">Новости</a></li>
-              <li><a class="header__nav-link" href="#">Офисы</a></li>
+              <li><a class="header__nav-link" href="#" itemprop="url">Компания</a></li>
+              <li><a class="header__nav-link" href="#" itemprop="url">Услуги</a></li>
+              <li><a class="header__nav-link" href="#" itemprop="url">Новости</a></li>
+              <li><a class="header__nav-link" href="#" itemprop="url">Офисы</a></li>
             </ul>
             <ul class="header__nav-action">
-              <li><a class="ui-btn ui-btn--h36 ui-btn--link" href="#">Выездное обслуживание</a></li>
-              <li><a class="ui-btn ui-btn--h36 ui-btn--link" href="#">Оплатить</a></li>
-              <li><a class="ui-btn ui-btn--h36 ui-btn--outline" href="#">Заказать звонок</a></li>
+              <li><a class="ui-btn ui-btn--h36 ui-btn--link" href="#" itemprop="url">Выездное обслуживание</a></li>
+              <li><a class="ui-btn ui-btn--h36 ui-btn--link" href="#" itemprop="url">Оплатить</a></li>
+              <li><a class="ui-btn ui-btn--h36 ui-btn--outline" href="#popup-callback" data-fancybox>Заказать звонок</a></li>
             </ul>
             <div class="header__nav-dropdown" data-nav="02">
               <div class="container-fluid">
                 <div class="row">
                   <div class="col-md-5">
                     <ul class="header__nav-submenu header__nav-submenu--01">
-                      <li><a class="header__nav-sublink is-active" href="#">Займ под залог ПТС</a></li>
-                      <li><a class="header__nav-sublink" href="#">Займ под залог авто</a></li>
-                      <li><a class="header__nav-sublink" href="#">Залог грузового авто</a></li>
-                      <li><a class="header__nav-sublink" href="#">Имущество</a></li>
-                      <li><a class="header__nav-sublink" href="#">Мотоцикл</a></li>
-                      <li><a class="header__nav-sublink" href="#">Оборудование</a></li>
-                      <li><a class="header__nav-sublink" href="#">Спецтехника</a></li>
+                      <li><a class="header__nav-sublink is-active" href="#" itemprop="url">Займ под залог ПТС</a></li>
+                      <li><a class="header__nav-sublink" href="#" itemprop="url">Займ под залог авто</a></li>
+                      <li><a class="header__nav-sublink" href="#" itemprop="url">Залог грузового авто</a></li>
+                      <li><a class="header__nav-sublink" href="#" itemprop="url">Имущество</a></li>
+                      <li><a class="header__nav-sublink" href="#" itemprop="url">Мотоцикл</a></li>
+                      <li><a class="header__nav-sublink" href="#" itemprop="url">Оборудование</a></li>
+                      <li><a class="header__nav-sublink" href="#" itemprop="url">Спецтехника</a></li>
                     </ul>
                   </div>
                   <div class="col-md-7">
                     <ul class="header__nav-submenu header__nav-submenu--02">
-                      <li><a class="header__nav-sublink" href="#">Займы для юридических лиц и ИП</a></li>
-                      <li><a class="header__nav-sublink" href="#">Срочный выкуп авто</a></li>
-                      <li><a class="header__nav-sublink" href="#">Перезалог ПТС</a></li>
-                      <li><a class="header__nav-sublink" href="#">Срочный займ без залога</a></li>
-                      <li><a class="header__nav-sublink" href="#">Финансирование под ПТС</a></li>
+                      <li><a class="header__nav-sublink" href="#" itemprop="url">Займы для юридических лиц и ИП</a></li>
+                      <li><a class="header__nav-sublink" href="#" itemprop="url">Срочный выкуп авто</a></li>
+                      <li><a class="header__nav-sublink" href="#" itemprop="url">Перезалог ПТС</a></li>
+                      <li><a class="header__nav-sublink" href="#" itemprop="url">Срочный займ без залога</a></li>
+                      <li><a class="header__nav-sublink" href="#" itemprop="url">Финансирование под ПТС</a></li>
                     </ul>
                   </div>
                 </div>
@@ -77,18 +101,22 @@
       <!-- Main :: Start-->
       <div class="main">
         <!-- Breadcrumbs :: Start-->
-        <section class="page-top maxwidth-theme">
-          <div class="container-fluid">
-            <ul class="breadcrumb" id="navigation" itemtype="http://schema.org/BreadcrumbList">
-              <li itemprop="itemListElement" itemtype="http://schema.org/ListItem"><a href="/" title="Главная" itemprop="item"><span itemprop="name"> Главная</span></a></li>
-              <li class="active" itemprop="itemListElement" itemtype="http://schema.org/ListItem"><a href="/" title="Главная" itemprop="item"><span itemprop="name"> О компании</span></a></li>
-              <li itemprop="itemListElement" itemtype="http://schema.org/ListItem"><a href="/" title="Главная" itemprop="item"><span itemprop="name"> Вопросы и ответы</span></a></li>
-            </ul>
-          </div>
-        </section>
+                <section class="page-top maxwidth-theme">
+                  <div class="container-fluid">
+                    <ul class="breadcrumb" id="navigation" item scope itemtype="https://schema.org/BreadcrumbList">
+                      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/" title="Главная" itemprop="item"><span itemprop="name">  Главная</span>
+                          <meta itemprop="position" content="1"></a></li>
+                      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/" title="О компании" itemprop="item"><span itemprop="name">О компании</span>
+                          <meta itemprop="position" content="2"></a></li>
+                      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><span itemprop="name">Вопросы и ответы</span>
+                        <meta itemprop="position" content="3">
+                      </li>
+                    </ul>
+                  </div>
+                </section>
         <!-- Breadcrumbs :: End-->
         <!-- Faq :: Start-->
-        <div class="faq">
+        <div class="faq" itemscope itemtype="https://schema.org/FAQPage">
           <div class="faq__container">
             <div class="faq__row">
               <div class="col-md-6 faq__head-left">
@@ -107,14 +135,16 @@
               </div>
               <ul class="faq__list">
                 <li>
-                  <div class="faq__item">
+                  <div class="faq__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                     <div class="faq__item-icon">
-                      <svg class="icon-faq" viewBox="0 0 34 34">
+                      <svg class="icon-faq">
                         <use xlink:href="sprites/sprite.svg#icon-faq"></use>
                       </svg>
                     </div>
-                    <div class="faq__item-toggle">Какая организация оказывает услугу займа под залог ПТС, услуги лизинга транспортных средств?</div>
-                    <div class="faq__item-content">   Важно, чтобы клиент и авто соответствовали все перечисленным выше требованиям. Если вы не являетесь совершеннолетним гражданином РФ, владельцем авто, предоставляемого под финансирование, мы не сможем дать положительный ответ на вашу заявку. В случае же соблюдения всех требований вы наверняка получите одобрение, как и более чем 95% тех, кто к нам обращается.</div>
+                    <div class="faq__item-toggle" itemprop="name">Какая организация оказывает услугу займа под залог ПТС, услуги лизинга транспортных средств?</div>
+                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                      <div class="faq__item-content" itemprop="text">Важно, чтобы клиент и авто соответствовали все перечисленным выше требованиям. Если вы не являетесь совершеннолетним гражданином РФ, владельцем авто, предоставляемого под финансирование, мы не сможем дать положительный ответ на вашу заявку. В случае же соблюдения всех требований вы наверняка получите одобрение, как и более чем 95% тех, кто к нам обращается.</div>
+                    </div>
                   </div>
                 </li>
                 <li>
@@ -417,7 +447,7 @@
               <input class="ui-placeholder__input" type="tel" name="tel"><span class="ui-placeholder__label">Телефон <sup>*</sup></span>
             </div>
             <div class="ui-placeholder">
-              <input class="ui-placeholder__input" type="text" value="Страхование" disabled><span class="ui-placeholder__label">Услуга <sup>*</sup></span>
+              <input class="ui-placeholder__input" type="text" value=""><span class="ui-placeholder__label">Услуга <sup>*</sup></span>
             </div>
             <label class="ui-check">
               <input class="ui-check__input" type="checkbox" name="agree" checked><span class="ui-check__checkbox"><svg width="19" height="13" viewBox="0 0 19 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -473,6 +503,21 @@
         </div>
       </div>
       <!-- Popups :: End-->
+      <!-- Right dok :: Start-->
+      <div class="ajax_basket">
+        <div class="fixed_wrapper">
+          <div class="right_dok"><span class="link" title="Заказать звонок"><span class="animate-load" data-event="jqm" data-param-id="11" data-name="callback"><i class="svg inline svg-inline-call" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                    <defs></defs>
+                    <path class="bccls-1" d="M14,9A7,7,0,0,0,7,2V0a9,9,0,0,1,9,9H14ZM12,9H10A3,3,0,0,0,7,6V4A5,5,0,0,1,12,9Zm2,4.053a0.507,0.507,0,0,0-.03-0.209,1.761,1.761,0,0,0-.756-0.526c-0.567-.318-1.145-0.626-1.7-0.954a2.049,2.049,0,0,0-.886-0.457c-0.607,0-1.493,1.8-2.031,1.8a2.139,2.139,0,0,1-.856-0.388A9.9,9.9,0,0,1,3.672,8.254,2.134,2.134,0,0,1,3.284,7.4c0-.537,1.8-1.421,1.8-2.026a2.045,2.045,0,0,0-.458-0.885C4.3,3.932,3.99,3.356,3.672,2.789a1.753,1.753,0,0,0-.528-0.755A0.5,0.5,0,0,0,2.935,2a4.427,4.427,0,0,0-1.384.308A2.617,2.617,0,0,0,.5,3.525,3.789,3.789,0,0,0-.011,5.373a7.646,7.646,0,0,0,.687,2.6A9.291,9.291,0,0,0,1.5,9.714,16.788,16.788,0,0,0,6.28,14.483a9.3,9.3,0,0,0,1.742.825,7.672,7.672,0,0,0,2.608.685,3.8,3.8,0,0,0,1.851-.507A2.618,2.618,0,0,0,13.7,14.434,4.416,4.416,0,0,0,14,13.053Z"></path>
+                  </svg></i></span></span><span class="link" title="Задать вопрос"><span class="animate-load" data-event="jqm" data-param-id="9" data-name="question"><i class="svg inline svg-inline-ask" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="14" viewBox="0 0 18 14">
+                    <defs></defs>
+                    <path class="cls-1" data-name="ask" d="M1898,414h-14a2,2,0,0,1-2-2V402a2,2,0,0,1,1.95-2,1.025,1.025,0,0,1,.22,0h13.69a1,1,0,0,1,.25.011A2,2,0,0,1,1900,402v10A2,2,0,0,1,1898,414Zm-11.47-12,4.49,4.482L1895.5,402h-8.97Zm11.47,0.5-6.17,6.173a1.26,1.26,0,0,1-1.63,0l-6.2-6.2V412h14v-9.5Z" transform="translate(-1882 -400)"></path>
+                  </svg></i></span></span></div>
+        </div>
+      </div>
+      <!-- Right dok :: End-->
     </div>
     <!-- Scripts :: Start-->
     <script src="js/plugins.min.js"></script>
