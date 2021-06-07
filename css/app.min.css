@@ -5745,16 +5745,18 @@ button.swiper-pagination-bullet {
       max-width: 90rem;
       padding: 0 0 10rem; } }
 
-.contacts_map {
-  overflow: hidden; }
+#contacts_map {
+  overflow: hidden;
+  width: 100%;
+  height: 57.3rem; }
   @media (max-width: 1279px) {
-    .contacts_map {
+    #contacts_map {
       height: 40.7rem; } }
   @media (max-width: 991px) {
-    .contacts_map {
+    #contacts_map {
       height: 42.3rem; } }
   @media (max-width: 575px) {
-    .contacts_map {
+    #contacts_map {
       height: 25rem; } }
 
 .special {
@@ -6152,6 +6154,8 @@ section.page-top {
   .breadcrumb > li > a {
     text-decoration: none;
     color: #9a9a9a; }
+    .breadcrumb > li > a:hover {
+      color: #00757E; }
   .breadcrumb > li > a.active {
     color: #00757E;
     opacity: 0.5; }
@@ -6174,10 +6178,6 @@ section.page-top {
     height: auto; }
   .breadcrumb > li:last-of-type::after {
     display: none; }
-  .breadcrumb > li:nth-child(2):not(:last-child) > a {
-    color: #00757E; }
-    .breadcrumb > li:nth-child(2):not(:last-child) > a:hover {
-      color: #608C8F; }
 
 .checklist {
   padding: 0;
@@ -10836,11 +10836,46 @@ body {
       order: 1;
       height: 45rem; } }
 
-[class$="-ground-pane"] {
+.office [class$="-ground-pane"],
+#office-moscow-map [class$="-ground-pane"],
+#office-khimki-map [class$="-ground-pane"] {
   filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
   /* Firefox 3.5+ */
   /* Chrome 19+ & Safari 6+ */
   filter: grayscale(100%); }
+
+.office [class$="-balloon__close-button"] {
+  display: none; }
+
+.office [class$="-balloon__content"] {
+  margin-right: 0 !important;
+  background: #00757E;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 18rem;
+  height: 6rem; }
+  .office [class$="-balloon__content"] > ymaps {
+    width: 100%; }
+
+.office [class$="-balloon__tail"]::after {
+  background: #00757E;
+  bottom: -4.5rem;
+  left: 4.5rem; }
+
+.office .popover-content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  font-size: 14px;
+  line-height: 2.2rem;
+  color: #ffffff; }
+  .office .popover-content span {
+    margin-left: 10px; }
 
 .office-point {
   padding: 2rem 0 10rem;
@@ -10930,6 +10965,11 @@ body {
       margin-top: 3rem;
       margin-bottom: 15px;
       display: block; } }
+
+#office-moscow-map,
+#office-khimki-map {
+  width: 100%;
+  height: 40.3rem; }
 
 .payment {
   padding-bottom: 100px;
