@@ -11,7 +11,7 @@
     <meta property="og:url" content="/">
     <meta property="og:title" content=" Ваш Финансовый Партнер – финансирование физических и юридических лиц">
     <meta property="og:image" content="images/logo.svg">
-    <title>О компании – Ваш Финансовый Партнер</title>
+    <title>Калькулятор кредита под залог автомобиля</title>
     <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="css/app.min.css">
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;amp;apikey=&lt;ваш API-ключ&gt;" type="text/javascript"></script>
@@ -100,121 +100,184 @@
       <!-- Header :: End-->
       <!-- Main :: Start-->
       <div class="main">
-        <!-- About :: Start-->
-        <div class="about">
+        <!-- Breadcrumbs :: Start-->
+                <section class="page-top maxwidth-theme">
+                  <div class="container-fluid">
+                    <ul class="breadcrumb" id="navigation" item scope itemtype="https://schema.org/BreadcrumbList">
+                      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/" title="Главная" itemprop="item"><span itemprop="name">  Главная</span>
+                          <meta itemprop="position" content="1"></a></li>
+                      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><span itemprop="name">Калькулятор</span>
+                        <meta itemprop="position" content="2">
+                      </li>
+                    </ul>
+                  </div>
+                </section>
+        <!-- Breadcrumbs :: End-->
+        <!-- Calc :: Start-->
+        <div class="container-fluid">
+          <h1 class="calc-page__title">Калькулятор кредита под залог автомобиля</h1>
+        </div>
+        <div class="calc">
+          <div class="container-fluid">
+            <div class="calc__wrapper">
+              <h2 class="calc__title">Рассчитать займ</h2>
+              <div class="calc__form">
+                <form action="#">
+                  <div class="calc__form-wrapper">
+                    <div class="calc__form-left">
+                      <div class="ui-range">
+                        <label class="ui-range__label">Выберите сумму</label>
+                        <div class="ui-range__field">
+                          <input class="ui-range__input" type="range" data-min="10000" data-max="1000000" data-from="10000">
+                          <div class="ui-field"><span class="ui-append">₽</span>
+                            <input class="ui-input" type="text" name="loan_sum" value="10 000">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="ui-range">
+                        <label class="ui-range__label">Выберите срок</label>
+                        <div class="ui-range__field">
+                          <input class="ui-range__input" type="range" data-min="10" data-max="60" data-from="10">
+                          <div class="ui-field"><span class="ui-append">месяцев</span>
+                            <input class="ui-input" type="text" name="loan_period" value="10">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="calc__form-right">
+                      <div class="calc__form-total">
+                        <label class="ui-label">Сумма платежа</label><span class="ui-total">21 234 ₽</span>
+                        <input type="hidden" name="loan_percent" value="0.02">
+                      </div>
+                      <div class="calc__form-action">
+                        <button class="ui-btn ui-btn--h72 ui-btn--theme" href="#popup-order" data-fancybox>Получить деньги</button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid calc-page__container">
+          <div class="row">
+            <div class="col-md-6"></div>
+            <div class="col-md-6 calc-page__col">
+              <figure class="calc-page__image"><img src="images/car-character-img.webp" alt="image"></figure>
+              <p class="calc-page__text">Калькулятор кредита под залог автомобиля решает сразу несколько задач. С его помощью быстро рассчитывается сумма займа, период, размер ежемесячных платежей. Достаточно ввести несколько значений, и у вас готовые данные. Без лишних слов и потери времени. Вы самостоятельно можете вычислить подходящие размеры выплат, изменить период займа или скорректировать любые данные. Это легко и понятно.</p>
+              <p class="calc-page__text-block">Рассчитать займ под ПТС можно прямо сейчас, не теряя времени. Это позволит определить примерный период кредитования и суммы ежемесячных платежей. Онлайн расчет занимает меньше минуты. Калькулятор автоломбарда поможет узнать ключевые моменты.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Calc :: End-->
+        <!-- Calculation :: Start-->
+        <div class="calculation">
+          <div class="container-fluid">
+            <h2 class="calculation__title">Онлайн расчет для кредита за 1 день</h2>
+            <div class="swiper-container swiper-benefits js-swiper-benefits">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="calculation__item">
+                    <figure class="calculation__item-icon"><img src="images/icons/icon-money-1.svg" alt="icon"></figure>
+                    <div class="calculation__desc">
+                      <p class="calculation__item-title">Размер ежемесячного платежа</p>
+                      <p class="calculation__item-text">Введите в соответствующие ячейки данные и нажмите «Получить деньги»</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="calculation__item">
+                    <figure class="calculation__item-icon"><img src="images/icons/icon-money-2.svg" alt="icon"></figure>
+                    <div class="calculation__desc">
+                      <p class="calculation__item-title">Подобрать оптимальный срок кредитования</p>
+                      <p class="calculation__item-text">Чем больше период, тем меньше ежемесячный платеж. Найдите подходящий вариант</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="calculation__item">
+                    <figure class="calculation__item-icon"><img src="images/icons/icon-money-3.svg" alt="icon"></figure>
+                    <div class="calculation__desc">
+                      <p class="calculation__item-title">Скорректировать размер займа</p>
+                      <p class="calculation__item-text">Попробуйте выставить среднее число, скорректируйте под свои возможности, исходя из полученного ежемесячного платежа</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination js-swiper-benefits-pagination"></div>
+            </div>
+          </div>
+        </div>
+        <!-- Calculation :: End-->
+        <!-- Credit-info :: Start-->
+        <div class="credit-info">
           <div class="container-fluid">
             <div class="row">
-              <div class="col-lg-6 col-md-7">
-                <h1 class="about__title">О компании</h1>
-                <mark class="about__marker"> Финансовая помощь, доступная каждому</mark>
-                <p class="about__text">
-                    Ваш Финансовый Партнер специализируется на оказании посреднических, финансовых и страховых услуг.
-                    Мы верим, что отношения должны быть предсказуемыми и прозрачными, поэтому даже сложные финансовые решения стараемся делать понятными.
-                </p>
-              </div>
-              <div class="col-lg-6 col-md-5 col-xl-5">
-                <div class="about__img"><img src="images/bg-team-pana.webp" alt="team-pana"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- About :: End-->
-        <!-- Advantages :: Start-->
-        <div class="advantages">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-xl-5 col-md-6">
-                <h2 class="advantages__title">   Внимательное отношение к клиентам</h2>
-                <div class="advantages__desc">
-                  <p class="advantages__text"> Ваш Финансовый Партнер ориентирован на лучшие в отрасли показатели качества обслуживания клиентов, технологии и эффективность.</p>
-                  <p class="advantages__text"> Наша основная задача – дать вам возможность получить деньги, финансирование или защиту от непредвиденных событий тогда, когда это нужно. И сделать это на удобных для вас условиях.</p>
-                </div>
-              </div>
-              <div class="col-xl-7 col-md-6">
-                <figure class="advantages__img"><img src="images/checklist.webp" alt="checklist"></figure>
-                <ul class="checklist advantages__checklist">
-                  <li>Четкость и оперативность работы сотрудников</li>
-                  <li>Высокое качество обслуживания</li>
-                  <li>Используем самые актуальные технологии</li>
-                  <li>Индивидуальный подход к каждому клиенту</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Advantages :: End-->
-        <!-- Guarantee :: Start-->
-        <div class="guarantee">
-          <div class="container-fluid">
-            <h2 class="guarantee__title">Железные гарантии</h2>
-            <p class="guarantee__subtitle">Мы выступаем на стороне профессионализма и деловой этики и гарантируем:
-              <div class="swiper-container swiper-benefits js-swiper-benefits">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="guarantee__item">
-                      <figure class="guarantee__item-icon"><img src="images/icons/icon-shield.svg" alt="icon"></figure>
-                      <p class="guarantee__item-text"> Абсолютную прозрачность, надежность и безопасность сделки</p>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="guarantee__item">
-                      <figure class="guarantee__item-icon"><img src="images/icons/icon-dependable.svg" alt="icon"></figure>
-                      <p class="guarantee__item-text"> Неразглашение персональной информации третьим лицам</p>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="guarantee__item">
-                      <figure class="guarantee__item-icon"><img src="images/icons/icon-docsecurity.svg" alt="icon"></figure>
-                      <p class="guarantee__item-text"> Конфиденциальность вашего обращения к нам</p>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="guarantee__item">
-                      <figure class="guarantee__item-icon"><img src="images/icons/icon-points-1.svg" alt="icon"></figure>
-                      <p class="guarantee__item-text"> Полную сохранность и страхование вашей техники</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-pagination js-swiper-benefits-pagination"></div>
-              </div>
-            </p>
-          </div>
-        </div>
-        <!-- Guarantee :: End-->
-        <!-- Insurance :: Start-->
-        <div class="insurance">
-          <div class="container-fluid">
-            <div class="row insurance__row-1">
-              <div class="col-md-6 order-md-2">
-                <h2 class="insurance__title">Страхование</h2>
-                <div class="insurance__desc">
-                  <p class="insurance__text">Страхование жизни, здоровья, имущества, транспортных средств – вот наиболее востребованные услуги, которыми пользуется большинство наших соотечественников.</p>
-                  <p class="insurance__text">Благодаря налаженным партнерским связям с лучшими страховыми компаниями, у нас есть возможность подобрать для Вас наиболее выгодные услуги, которые помогут Вам защитить себя от непредвиденных событий в жизни.</p>
+              <div class="col-md-6">
+                <div class="credit-info__left">
+                  <p class="checklist__title">С помощью калькулятора кредита под залог автомобиля легко рассчитать:</p>
+                  <ul class="checklist credit-info__checklist">
+                    <li>размер займа</li>
+                    <li>период выплат</li>
+                    <li>ежемесячные платежи</li>
+                  </ul>
+                  <p class="credit-info__text">При возникновении сложностей обратитесь к нашим менеджерам за помощью. Информация будет предоставлена меньше, чем за 15 минут, и уже под ваши персональные потребности. Если есть какие-то дополнительные пожелания или остались вопросы, давайте решим их сразу. Оперативная поддержка сократит время ожидания, и уже в день обращения деньги будут у вас на руках.</p>
                 </div>
               </div>
               <div class="col-md-6">
-                <figure class="insurance__img"><img src="images/bg-insurance.webp" alt="image"></figure>
-              </div>
-            </div>
-            <div class="row insurance__row-2">
-              <div class="col-md-6">
-                <h3 class="insurance__checklist-title">Среди предлагаемых нами услуг:</h3>
-                <ul class="checklist insurance__checklist">
-                  <li>ОСАГО, КАСКО, страхование транспортных средств и имущественной ответственности</li>
-                  <li>Страхование от несчастных случаев и болезней</li>
-                  <li>Страхование недвижимости</li>
-                  <li>Для бизнеса: страхование оборудования, грузов, страхование ответственности за нарушение договорных обязательств, страхование при перевозке и иное</li>
-                </ul>
-              </div>
-              <div class="col-md-6">
-                <div class="insurance__text-block">
-                  <p class="insurance__text-content">  Свяжитесь с нами сейчас, и наши специалисты помогут Вам выбрать подходящую услугу и страховую компанию, произведут для вас расчет стоимости полиса, назначат встречу в удобное Вам время и выдадут вам страховой полис.</p>
+                <div class="credit-info__right">
+                  <div class="credit-info__text-block">
+                    <p>Кредит под ПТС — это просто! Оставьте заявку или свяжитесь с нами по телефону.</p>
+                  </div>
+                  <figure class="credit-info__image"><img src="images/key-icon.webp" alt="image"></figure>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <!-- Insurance :: End-->
+        <!-- Credit-info :: End-->
+        <!-- Programs :: Start-->
+        <div class="programs">
+          <div class="container-fluid">
+            <h2 class="programs__title">Наши программы</h2>
+            <p class="programs__subtitle">Работаем с физическими и юридическими лицами. Возможен кредит без залога и без сдачи авто. Машина остается у вас или стоит на стоянке.</p>
+            <div class="program__container">
+              <div class="row">
+                <div class="col-xl-4 col-md-6">
+                  <div class="program__item"><img src="images/program-1.png" alt="image">
+                    <p>Финансирование под ПТС</p>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                  <div class="program__item"><img src="images/program-2.png" alt="image">
+                    <p>Займ под авто</p>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                  <div class="program__item"><img src="images/program-3.png" alt="image">
+                    <p>Займ под залог ПТС</p>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                  <div class="program__item"><img src="images/program-4.png" alt="image">
+                    <p>Рефинансирование</p>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                  <div class="program__item"><img src="images/program-5.png" alt="image">
+                    <p>Займ для бизнеса</p>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                  <div class="program__item"><img src="images/program-6.png" alt="image">
+                    <p>Лизинг</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Programs :: End-->
         <!-- Contacts :: Start-->
         <div class="contacts">
           <div class="container-fluid">
