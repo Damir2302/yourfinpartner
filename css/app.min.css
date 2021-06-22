@@ -11496,46 +11496,81 @@ body {
         font-size: 2rem;
         line-height: 2.3rem; } }
 
-.services-city {
+.services-in-cities {
   padding: 8rem 0 10rem; }
 
-.services-city__title {
+.services-in-cities__title {
   margin: 0 0 16px;
   font-weight: normal;
   font-size: 3.3rem;
   line-height: 4.3rem;
   color: #333333; }
 
-.services-city__text {
+.services-in-cities__text {
   margin: 0 0 6rem;
   max-width: 75.6rem;
   font-size: 16px;
   line-height: 2.6rem;
   color: #000000; }
+  @media (max-width: 767px) {
+    .services-in-cities__text {
+      margin-bottom: 40px; } }
 
-.services-city__wrapper {
+.services-in-cities__wrapper {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
   justify-content: space-between; }
+  @media (max-width: 1279px) {
+    .services-in-cities__wrapper {
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; } }
 
-.services-city__list {
+.services-in-cities__list {
   margin: 0;
   padding-left: 20px; }
+  @media (max-width: 1279px) {
+    .services-in-cities__list {
+      -ms-flex: 0 0 33.3%;
+      flex: 0 0 33.3%;
+      max-width: 33.3%; } }
+  @media (max-width: 767px) {
+    .services-in-cities__list {
+      -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
+      max-width: 50%; } }
+  @media (max-width: 575px) {
+    .services-in-cities__list {
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%; } }
 
-.services-city__links:not(:last-child) {
+.services-in-cities__links:not(:last-child) {
   margin-bottom: 50px; }
+  @media (max-width: 1279px) {
+    .services-in-cities__links:not(:last-child) {
+      margin-bottom: unset; } }
 
-.services-city__links::marker {
+@media (max-width: 1279px) {
+  .services-in-cities__links {
+    margin-bottom: 40px; } }
+
+@media (max-width: 575px) {
+  .services-in-cities__links {
+    margin-bottom: unset; } }
+
+.services-in-cities__links::marker {
   color: #666666; }
 
-.services-city__links > a {
+.services-in-cities__links > a {
   font-size: 2.2rem;
   line-height: 3.2rem;
   color: #666666;
   text-decoration: none; }
 
-.services-city__links:hover > a, .services-city__links:hover::marker {
+.services-in-cities__links:hover > a, .services-in-cities__links:hover::marker {
   color: #00757E; }
 
 #grid {
