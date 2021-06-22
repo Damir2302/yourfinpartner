@@ -11496,6 +11496,48 @@ body {
         font-size: 2rem;
         line-height: 2.3rem; } }
 
+.services-city {
+  padding: 8rem 0 10rem; }
+
+.services-city__title {
+  margin: 0 0 16px;
+  font-weight: normal;
+  font-size: 3.3rem;
+  line-height: 4.3rem;
+  color: #333333; }
+
+.services-city__text {
+  margin: 0 0 6rem;
+  max-width: 75.6rem;
+  font-size: 16px;
+  line-height: 2.6rem;
+  color: #000000; }
+
+.services-city__wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.services-city__list {
+  margin: 0;
+  padding-left: 20px; }
+
+.services-city__links:not(:last-child) {
+  margin-bottom: 50px; }
+
+.services-city__links::marker {
+  color: #666666; }
+
+.services-city__links > a {
+  font-size: 2.2rem;
+  line-height: 3.2rem;
+  color: #666666;
+  text-decoration: none; }
+
+.services-city__links:hover > a, .services-city__links:hover::marker {
+  color: #00757E; }
+
 #grid {
   position: absolute;
   top: 0;
