@@ -117,44 +117,224 @@
         <div class="container-fluid">
           <h1 class="calc-page__title">Калькулятор кредита под залог автомобиля</h1>
         </div>
-        <div class="calc">
+        <div class="calc" data-tabs>
           <div class="container-fluid">
-            <div class="calc__wrapper">
-              <h2 class="calc__title">Рассчитать займ</h2>
-              <div class="calc__form">
-                <form action="#">
-                  <div class="calc__form-wrapper">
-                    <div class="calc__form-left">
-                      <div class="ui-range">
-                        <label class="ui-range__label">Выберите сумму</label>
-                        <div class="ui-range__field">
-                          <input class="ui-range__input" type="range" data-min="10000" data-max="1000000" data-from="10000">
-                          <div class="ui-field"><span class="ui-append">₽</span>
-                            <input class="ui-input" type="text" name="loan_sum" value="10 000">
-                          </div>
-                        </div>
-                      </div>
-                      <div class="ui-range">
-                        <label class="ui-range__label">Выберите срок</label>
-                        <div class="ui-range__field">
-                          <input class="ui-range__input" type="range" data-min="10" data-max="60" data-from="10">
-                          <div class="ui-field"><span class="ui-append">месяцев</span>
-                            <input class="ui-input" type="text" name="loan_period" value="10">
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="calc__form-right">
-                      <div class="calc__form-total">
-                        <label class="ui-label">Сумма платежа</label><span class="ui-total">21 234 ₽</span>
-                        <input type="hidden" name="loan_percent" value="0.02">
-                      </div>
-                      <div class="calc__form-action">
-                        <button class="ui-btn ui-btn--h72 ui-btn--theme" href="#popup-order" data-fancybox>Получить деньги</button>
-                      </div>
-                    </div>
+            <div class="calc__control">
+              <div class="swiper-container swiper-calc js-swiper-calc">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <button class="calc__control-btn is-active" data-tabs-btn="01">Финансирование под ПТС</button>
                   </div>
-                </form>
+                  <div class="swiper-slide">
+                    <button class="calc__control-btn" data-tabs-btn="02">Займ под авто</button>
+                  </div>
+                  <div class="swiper-slide">
+                    <button class="calc__control-btn" data-tabs-btn="03">Займ под залог ПТС</button>
+                  </div>
+                  <div class="swiper-slide">
+                    <button class="calc__control-btn" data-tabs-btn="04">Рефинансирование</button>
+                  </div>
+                  <div class="swiper-slide">
+                    <button class="calc__control-btn" data-tabs-btn="05">Лизинг</button>
+                  </div>
+                </div>
+                <button class="swiper-prev js-swiper-calc-prev">
+                  <svg class="icon-prev">
+                    <use xlink:href="sprites/sprite.svg#icon-prev"></use>
+                  </svg>
+                </button>
+                <button class="swiper-next js-swiper-calc-next">
+                  <svg class="icon-next">
+                    <use xlink:href="sprites/sprite.svg#icon-next"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="calc__wrapper">
+              <div class="calc__content is-active" data-tabs-content="01">
+                <h2 class="calc__title">Рассчитать займ</h2>
+                <div class="calc__form">
+                  <form action="#">
+                    <div class="calc__form-wrapper">
+                      <div class="calc__form-left">
+                        <div class="ui-range">
+                          <label class="ui-range__label">Выберите сумму</label>
+                          <div class="ui-range__field">
+                            <input class="ui-range__input" type="range" data-min="50000" data-max="500000" data-from="50000">
+                            <div class="ui-field"><span class="ui-append">₽</span>
+                              <input class="ui-input" type="text" name="loan_sum" value="50 000">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="ui-range">
+                          <label class="ui-range__label">Выберите срок</label>
+                          <div class="ui-range__field">
+                            <input class="ui-range__input" type="range" data-min="12" data-max="36" data-from="12">
+                            <div class="ui-field"><span class="ui-append">месяцев</span>
+                              <input class="ui-input" type="text" name="loan_period" value="10">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="calc__form-right">
+                        <div class="calc__form-total">
+                          <label class="ui-label">Сумма платежа</label><span class="ui-total"></span>
+                        </div>
+                        <div class="calc__form-action">
+                          <button class="ui-btn ui-btn--h72 ui-btn--theme" href="#popup-order" onclick="$('#service').val('Финансирование под ПТС');" data-service="Деньги под ПТС в Москве" data-fancybox="">Получить деньги</button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="calc__content" data-tabs-content="02">
+                <h2 class="calc__title">Рассчитать займ</h2>
+                <div class="calc__form">
+                  <form action="#">
+                    <div class="calc__form-wrapper">
+                      <div class="calc__form-left">
+                        <div class="ui-range">
+                          <label class="ui-range__label">Выберите сумму</label>
+                          <div class="ui-range__field">
+                            <input class="ui-range__input" type="range" data-min="50000" data-max="15000000" data-from="50000">
+                            <div class="ui-field"><span class="ui-append">₽</span>
+                              <input class="ui-input" type="text" name="loan_sum" value="50 000">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="ui-range">
+                          <label class="ui-range__label">Выберите срок</label>
+                          <div class="ui-range__field">
+                            <input class="ui-range__input" type="range" data-min="2" data-max="36" data-from="6">
+                            <div class="ui-field"><span class="ui-append">месяцев</span>
+                              <input class="ui-input" type="text" name="loan_period" value="10">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="calc__form-right">
+                        <div class="calc__form-total">
+                          <label class="ui-label">Сумма платежа</label><span class="ui-total"></span>
+                        </div>
+                        <div class="calc__form-action">
+                          <button class="ui-btn ui-btn--h72 ui-btn--theme" href="#popup-order" onclick="$('#service').val('Финансирование под ПТС');" data-service="Деньги под ПТС в Москве" data-fancybox="">Получить деньги</button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="calc__content" data-tabs-content="03">
+                <h2 class="calc__title">Рассчитать займ</h2>
+                <div class="calc__form">
+                  <form action="#">
+                    <div class="calc__form-wrapper">
+                      <div class="calc__form-left">
+                        <div class="ui-range">
+                          <label class="ui-range__label">Выберите сумму</label>
+                          <div class="ui-range__field">
+                            <input class="ui-range__input" type="range" data-min="50000" data-max="5000000" data-from="50000">
+                            <div class="ui-field"><span class="ui-append">₽</span>
+                              <input class="ui-input" type="text" name="loan_sum" value="50 000">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="ui-range">
+                          <label class="ui-range__label">Выберите срок</label>
+                          <div class="ui-range__field">
+                            <input class="ui-range__input" type="range" data-min="3" data-max="36" data-from="6">
+                            <div class="ui-field"><span class="ui-append">месяцев</span>
+                              <input class="ui-input" type="text" name="loan_period" value="6">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="calc__form-right">
+                        <div class="calc__form-total">
+                          <label class="ui-label">Сумма платежа</label><span class="ui-total"></span>
+                        </div>
+                        <div class="calc__form-action">
+                          <button class="ui-btn ui-btn--h72 ui-btn--theme" href="#popup-order" onclick="$('#service').val('Финансирование под ПТС');" data-service="Деньги под ПТС в Москве" data-fancybox="">Получить деньги</button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="calc__content" data-tabs-content="04">
+                <h2 class="calc__title">Рассчитать займ</h2>
+                <div class="calc__form">
+                  <form action="#">
+                    <div class="calc__form-wrapper">
+                      <div class="calc__form-left">
+                        <div class="ui-range">
+                          <label class="ui-range__label">Выберите сумму</label>
+                          <div class="ui-range__field">
+                            <input class="ui-range__input" type="range" data-min="50000" data-max="15000000" data-from="50000">
+                            <div class="ui-field"><span class="ui-append">₽</span>
+                              <input class="ui-input" type="text" name="loan_sum" value="50 000">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="ui-range">
+                          <label class="ui-range__label">Выберите срок</label>
+                          <div class="ui-range__field">
+                            <input class="ui-range__input" type="range" data-min="2" data-max="36" data-from="6">
+                            <div class="ui-field"><span class="ui-append">месяцев</span>
+                              <input class="ui-input" type="text" name="loan_period" value="6">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="calc__form-right">
+                        <div class="calc__form-total">
+                          <label class="ui-label">Сумма платежа</label><span class="ui-total"></span>
+                        </div>
+                        <div class="calc__form-action">
+                          <button class="ui-btn ui-btn--h72 ui-btn--theme" href="#popup-order" onclick="$('#service').val('Финансирование под ПТС');" data-service="Деньги под ПТС в Москве" data-fancybox="">Получить деньги</button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="calc__content" data-tabs-content="05">
+                <h2 class="calc__title">Рассчитать займ</h2>
+                <div class="calc__form">
+                  <form action="#">
+                    <div class="calc__form-wrapper">
+                      <div class="calc__form-left">
+                        <div class="ui-range">
+                          <label class="ui-range__label">Выберите сумму</label>
+                          <div class="ui-range__field">
+                            <input class="ui-range__input" type="range" data-min="50000" data-max="5000000" data-from="50000">
+                            <div class="ui-field"><span class="ui-append">₽</span>
+                              <input class="ui-input" type="text" name="loan_sum" value="50 000">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="ui-range">
+                          <label class="ui-range__label">Выберите срок</label>
+                          <div class="ui-range__field">
+                            <input class="ui-range__input" type="range" data-min="12" data-max="36" data-from="12">
+                            <div class="ui-field"><span class="ui-append">месяцев</span>
+                              <input class="ui-input" type="text" name="loan_period" value="12">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="calc__form-right">
+                        <div class="calc__form-total">
+                          <label class="ui-label">Сумма платежа</label><span class="ui-total"></span>
+                        </div>
+                        <div class="calc__form-action">
+                          <button class="ui-btn ui-btn--h72 ui-btn--theme" href="#popup-order" onclick="$('#service').val('Финансирование под ПТС');" data-service="Деньги под ПТС в Москве" data-fancybox="">Получить деньги</button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
               </div>
             </div>
           </div>

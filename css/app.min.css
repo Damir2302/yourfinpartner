@@ -10677,6 +10677,25 @@ h1.faq__title {
     .share-icon {
       width: 16px; } }
 
+.shares-block {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease; }
+
+.share {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer; }
+
+.share:hover > .shares-block {
+  margin-right: 15px;
+  visibility: visible;
+  opacity: 1; }
+
 .content__text {
   margin: 6rem 0 0; }
   @media (max-width: 1279px) {
