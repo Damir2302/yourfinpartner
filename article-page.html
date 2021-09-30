@@ -257,37 +257,63 @@
                 <div class="comment__block">
                   <div class="comment__avatar"><img src="images/icons/avatar-icon.svg" alt="icon"></div>
                   <div class="comment__text">
-                    <input class="comment__input" type="text" placeholder="Введите сообщение">
+                    <input class="comment__input" type="text" placeholder="Оставьте свой комментарий...">
                     <div class="comment__option">
                       <svg class="clip-icon">
                         <use xlink:href="sprites/sprite.svg#clip-icon"></use>
                       </svg>
-                      <svg class="smile-icon">
-                        <use xlink:href="sprites/sprite.svg#smile-icon"></use>
-                      </svg>
                     </div>
+                    <div class="comment__user">
+                      <input class="comment__input-name" type="text" placeholder="Ваше имя">
+                      <button class="comment__btn">Опубликовать</button>
+                    </div>
+                    <div class="comment__text--error">Комментарий не может быть пустым</div>
                   </div>
                 </div>
+                <div class="comments__line-break"></div>
                 <div class="comment__items">
-                  <div class="comment__item-row">
-                    <div class="comment__person-img"><img src="images/avatar-img-1.png" alt="img"></div>
-                    <div class="comment__message">
-                      <p class="message__item">Супер вау круто</p>
-                      <p class="message__reply">   Ответить</p>
+                  <div class="comment__item">
+                    <div class="comment__item-row">
+                      <div class="comment__person-img"><img src="images/icons/avatar-icon.svg" alt="img"></div>
+                      <div class="comment__wrap">
+                        <div class="comment__info"><span>Дмитрий</span><span>01.09.2021 17:07:13</span></div>
+                        <div class="comment__message">
+                          <p class="message__item">Супер вау круто</p>
+                          <p class="message__reply">   Ответить</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="comment__item-row child-comment">
+                      <div class="comment__person-img"><img src="images/icons/avatar-icon.svg" alt="img"></div>
+                      <div class="comment__wrap">
+                        <div class="comment__info"><span class="comment__username">Андрей</span><span>02.09.2021 23:02:44</span></div>
+                        <div class="comment__message">
+                          <p class="message__item">Да, очень круто!</p>
+                          <p class="message__reply">   Ответить</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="comment__item-row child-comment">
+                      <div class="comment__person-img"><img src="images/icons/avatar-icon.svg" alt="img"></div>
+                      <div class="comment__wrap">
+                        <div class="comment__info"><span class="comment__username">Владимир</span><span class="reply-to"><i class="fa fa-share"></i>Андрей</span><span>02.09.2021 23:07:33</span></div>
+                        <div class="comment__message">
+                          <p class="message__item">Да, очень круто!</p>
+                          <p class="message__reply">   Ответить</p>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div class="comment__item-row">
-                    <div class="comment__person-img"><img src="images/avatar-img-2.png" alt="img"></div>
-                    <div class="comment__message">
-                      <p class="message__item">Супер вау круто</p>
-                      <p class="message__reply">   Ответить</p>
-                    </div>
-                  </div>
-                  <div class="comment__item-row">
-                    <div class="comment__person-img"><img src="images/avatar-img-3.png" alt="img"></div>
-                    <div class="comment__message">
-                      <p class="message__item">Супер вау круто</p>
-                      <p class="message__reply">   Ответить</p>
+                  <div class="comment__item">
+                    <div class="comment__item-row">
+                      <div class="comment__person-img"><img src="images/icons/avatar-icon.svg" alt="img"></div>
+                      <div class="comment__wrap">
+                        <div class="comment__info"><span>Евгений</span><span>02.09.2021 23:45:20</span></div>
+                        <div class="comment__message">
+                          <p class="message__item">Просто класс</p>
+                          <p class="message__reply">   Ответить</p>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -300,6 +326,32 @@
       <!-- Main :: End-->
       <!-- Footer :: Start-->
       <div class="footer">
+        <div class="wrap-text-cookie">
+          <div class="maxwidth-theme">
+            <div class="in-wrap-cookie">
+              <p style="text-align: center">
+                &Ncy;&acy;&shcy; &scy;&acy;&jcy;&tcy; &scy;&ocy;&bcy;&icy;&rcy;&acy;&iecy;&tcy; &icy; &ocy;&bcy;&rcy;&acy;&bcy;&acy;&tcy;&ycy;&vcy;&acy;&iecy;&tcy; &dcy;&acy;&ncy;&ncy;&ycy;&iecy; &scy; &pcy;&ocy;&mcy;&ocy;&shchcy;&softcy;&yucy; Cookie, &chcy;&tcy;&ocy;&bcy;&ycy; &bcy;&ycy;&tcy;&softcy; &ucy;&dcy;&ocy;&bcy;&ncy;&iecy;&iecy; &dcy;&lcy;&yacy; &Vcy;&acy;&scy; &icy;
+                &ucy;&chcy;&icy;&tcy;&ycy;&vcy;&acy;&tcy;&softcy; &Vcy;&acy;&shcy;&icy; &icy;&ncy;&tcy;&iecy;&rcy;&iecy;&scy;&ycy;. &TScy;&iecy;&lcy;&icy; &icy;&scy;&pcy;&ocy;&lcy;&softcy;&zcy;&ocy;&vcy;&acy;&ncy;&icy;&yacy; &fcy;&acy;&jcy;&lcy;&ocy;&vcy; Cookie &ocy;&pcy;&rcy;&iecy;&dcy;&iecy;&lcy;&iecy;&ncy;&ycy; &vcy;<a class="warning_links" href="/bitrix/templates/aspro-landscape/file/Политика_обработки_ПД.pdf" target="_blank">
+                  &Pcy;&ocy;&lcy;&icy;&tcy;&icy;&kcy;&iecy;
+                  &ocy;&bcy;&rcy;&acy;&bcy;&ocy;&tcy;&kcy;&icy; &pcy;&iecy;&rcy;&scy;&ocy;&ncy;&acy;&lcy;&softcy;&ncy;&ycy;&khcy; &dcy;&acy;&ncy;&ncy;&ycy;&khcy;</a>
+              </p>
+              <div class="close_link">&times;</div>
+            </div>
+          </div>
+        </div>
+        <div class="wrap-text-cookie-mobile">
+          <div class="maxwidth-theme">
+            <div class="in-wrap-cookie">
+              <p>
+                &Ncy;&acy;&shcy; &scy;&acy;&jcy;&tcy; &scy;&ocy;&bcy;&icy;&rcy;&acy;&iecy;&tcy; &icy; &ocy;&bcy;&rcy;&acy;&bcy;&acy;&tcy;&ycy;&vcy;&acy;&iecy;&tcy; &dcy;&acy;&ncy;&ncy;&ycy;&iecy; &scy; &pcy;&ocy;&mcy;&ocy;&shchcy;&softcy;&yucy; Cookie, &chcy;&tcy;&ocy;&bcy;&ycy; &bcy;&ycy;&tcy;&softcy; &ucy;&dcy;&ocy;&bcy;&ncy;&iecy;&iecy; &dcy;&lcy;&yacy; &Vcy;&acy;&scy; &icy;
+                &ucy;&chcy;&icy;&tcy;&ycy;&vcy;&acy;&tcy;&softcy; &Vcy;&acy;&shcy;&icy; &icy;&ncy;&tcy;&iecy;&rcy;&iecy;&scy;&ycy;. &TScy;&iecy;&lcy;&icy; &icy;&scy;&pcy;&ocy;&lcy;&softcy;&zcy;&ocy;&vcy;&acy;&ncy;&icy;&yacy; &fcy;&acy;&jcy;&lcy;&ocy;&vcy; Cookie &ocy;&pcy;&rcy;&iecy;&dcy;&iecy;&lcy;&iecy;&ncy;&ycy; &vcy;<a class="warning_links" href="/bitrix/templates/aspro-landscape/file/Политика_обработки_ПД.pdf" target="_blank">
+                  &Pcy;&ocy;&lcy;&icy;&tcy;&icy;&kcy;&iecy;
+                  &ocy;&bcy;&rcy;&acy;&bcy;&ocy;&tcy;&kcy;&icy; &pcy;&iecy;&rcy;&scy;&ocy;&ncy;&acy;&lcy;&softcy;&ncy;&ycy;&khcy; &dcy;&acy;&ncy;&ncy;&ycy;&khcy;</a>
+              </p>
+              <div class="close_link">&times;</div>
+            </div>
+          </div>
+        </div>
         <div class="container-fluid">
           <div class="footer__nav">
             <div class="footer__nav-group"><span class="footer__nav-title">Компания</span>
